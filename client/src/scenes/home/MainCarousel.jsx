@@ -24,6 +24,8 @@ const MainCarousel = () => {
       showThumbs={false}
       showIndicators={false}
       showStatus={false}
+      autoplay={true}
+      interval={1000}
       renderArrowPrev={(onClickHandler, hasPrev, label) => (
         <IconButton
           onClick={onClickHandler}
@@ -82,13 +84,15 @@ const MainCarousel = () => {
           >
             <Typography color={shades.secondary[200]}>-- NEW ITEMS</Typography>
             <Typography variant="h1">Summer Sale</Typography>
-            <Typography
+            <a href="#discover">
+              <Typography
               fontWeight="bold"
               color={shades.secondary[300]}
               sx={{ textDecoration: "underline" }}
             >
-              Discover More
-            </Typography>
+                Discover More
+              </Typography>
+            </a>
           </Box>
         </Box>
       ))}

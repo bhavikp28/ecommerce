@@ -20,7 +20,7 @@ function Navbar() {
       display="flex"
       alignItems="center"
       width="100%"
-      height="60px"
+      height="70px"
       backgroundColor="rgba(255, 255, 255, 0.95)"
       color="black"
       position="fixed"
@@ -38,9 +38,10 @@ function Navbar() {
         <Box
           onClick={() => navigate("/")}
           sx={{ "&:hover": { cursor: "pointer" } }}
-          color={shades.secondary[500]}
+          color={shades.secondary[600]}
+          fontSize={20}
         >
-          ECOMMER
+          Seasonal
         </Box>
         <Box
           display="flex"
